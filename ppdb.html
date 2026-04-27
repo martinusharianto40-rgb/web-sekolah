@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Form PPDB</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #00c6ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0072ff;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Form Pendaftaran PPDB</h2>
+
+<form id="formPPDB">
+  <input type="text" placeholder="Nama Lengkap" required>
+
+  <select required>
+    <option value="">Jenis Kelamin</option>
+    <option>Laki-laki</option>
+    <option>Perempuan</option>
+  </select>
+
+  <input type="text" placeholder="Asal Sekolah" required>
+
+  <input type="number" placeholder="No HP" required>
+
+  <select required>
+    <option value="">Pilih Kelas</option>
+    <option>Kelas 7A</option>
+    <option>Kelas 7B</option>
+  </select>
+
+  <button type="submit">Kirim Data</button>
+</form>
+
+<script>
+document.getElementById("formPPDB").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Pendaftaran berhasil dikirim!");
+});
+</script>
+
+</body>
+</html>
