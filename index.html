@@ -2,8 +2,6 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-  <meta name="description" content="Website resmi SMP RK Deli Murni Diski. Informasi sekolah dan PPDB.">
-  <meta name="google-site-verification" content="znWCVrPQjtFNNqVP73hppF-BoOhShXtl5Q5JJ7NyJHc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SMP RK DELI MURNI DISKI</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -159,7 +157,7 @@ footer {
 }
 .slider {
   width: 100%;
-  height: 100vh; /* FULL LAYAR 🔥 */
+  height: 60vh; /* 🔥 lebih kecil untuk HP */
   overflow: hidden;
   position: relative;
 }
@@ -167,7 +165,7 @@ footer {
 .slide {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -258,6 +256,47 @@ footer {
 .sosmed a:hover {
   background: yellow;
   color: black;
+}
+@media (max-width: 768px) {
+
+  .slider {
+    height: 40vh;
+  }
+
+  .slide {
+    height: 40vh;
+  }
+
+  .slider-text h1 {
+    font-size: 18px;
+  }
+
+  .slider-text p {
+    font-size: 12px;
+  }
+
+  .judul h1 {
+    font-size: 18px;
+  }
+
+  .judul p {
+    font-size: 12px;
+  }
+
+  .logo-kiri, .logo-kanan {
+    width: 50px;
+    height: 50px;
+  }
+
+  .berita-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
 }
 </style>
 </head>
